@@ -38,7 +38,7 @@ function TableIndex() {
         <div className='w-full relative px-3'>
             <div className="sec m-auto my-10 space-y-8 w-1/2 mob:w-full flex flex-col">
                 <div className="message bg-yellow-100 text-yellow-700 p-5 rounded-lg shadow-lg shadow-yellow-300/30 text-center border border-yellow-300/30"><p className="text-center"> : GDSC-SOIT :</p>
-                <p><span className="text-black">Google Cloud Study Jam 23'</span>  </p>
+                <p><span className="text-black">Google Cloud Study Jam 23</span>  </p>
                 </div>
 
                 <div className="info flex mob:flex-col mob:justify-center mob:items-center mob:space-y-10 mob:p-5 justify-evenly space-x-3 mob:space-x-0">
