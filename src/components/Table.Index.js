@@ -15,7 +15,7 @@ function TableIndex() {
     const calculateTotalEligibility = () => {
         let total = 0;
         data.forEach((ele) => {
-            ele["Total Completions of both Pathways"] == "Yes" && total++;
+            ele["All 3 Pathways Completed - Yes or No"] == "Yes" && total++;
         })
         setEligibleforSwags(total)
     }
@@ -25,7 +25,7 @@ function TableIndex() {
         const newArr = [];
 
         for (let i = 0; i < data.length; i++) {
-            let participant = data[i]["Student Name"].toLowerCase();
+            let participant = data[i]["User Name"].toLowerCase();
             let match = participant.includes(name.toLowerCase());
             if (match) {
               newArr.push(data[i]);
@@ -38,7 +38,7 @@ function TableIndex() {
         <div className='w-full relative px-3'>
             <div className="sec m-auto my-10 space-y-8 w-1/2 mob:w-full flex flex-col">
                 <div className="message bg-yellow-100 text-yellow-700 p-5 rounded-lg shadow-lg shadow-yellow-300/30 text-center border border-yellow-300/30"><p className="text-center"> : GDSC-SATI :</p>
-                <p><span className="text-black">Google Cloud Study Jam 23</span>  </p>
+                <p><span className="text-black">Google Cloud GenAI Jam 24</span>  </p>
                 </div>
 
                 <div className="info flex mob:flex-col mob:justify-center mob:items-center mob:space-y-10 mob:p-5 justify-evenly space-x-3 mob:space-x-0">
@@ -71,10 +71,10 @@ function TableIndex() {
                         <td className="rounded-ss-lg w-80 p-2 border-r-2 border-r-gray-300">Name</td>
                         {/* <td className="p-2 border-r-2 border-r-gray-300">Email</td> */}
                         <td className="p-2 border-r-2 border-r-gray-300">Redemption Status</td>
-                        <td className="mob:hidden p-2 px-10 border-r-2 border-r-gray-300">Institution</td>
-                        <td className="mob:rounded-se-lg p-2 border-r-2 border-r-gray-300 max-w-[150px]">Completions of both Pathways</td>
-                        <td className="mob:hidden p-2 border-r-2 border-r-gray-300 max-w-[150px]">No Courses Completed</td>
-                        <td className="mob:hidden p-2 border-r-2 border-r-gray-300 max-w-[150px]">No Skill Badges Completed</td>
+                       {/* <td className="mob:hidden p-2 px-10 border-r-2 border-r-gray-300">Institution</td> */}
+                        <td className="mob:rounded-se-lg p-2 border-r-2 border-r-gray-300 max-w-[150px]">Completions of all Pathways</td>
+                        <td className="mob:hidden p-2 border-r-2 border-r-gray-300 max-w-[150px]">Prompt Design in Vertex AI Completiond</td>
+                        <td className="mob:hidden p-2 border-r-2 border-r-gray-300 max-w-[150px]">Develop GenAI Apps with Gemini and Streamlit Completion</td>
                         <td className="mob:hidden rounded-se-lg p-2 max-w-[150px]">GenAI Game Completed</td>
                         {/* <td className="p-2 border-r-2 border-r-gray-300">Enroll Date & Time</td> */}
                         {/* <td className="p-2 border-r-2 border-r-gray-300">Enroll. Status</td> */}
